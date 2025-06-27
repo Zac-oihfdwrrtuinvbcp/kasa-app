@@ -1,0 +1,13 @@
+
+.home {
+    padding: 20px;
+    &__card-container {
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        padding: 50px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
