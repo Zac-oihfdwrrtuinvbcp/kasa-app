@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.rating {
+  display: flex;
+  gap: 5px;
+
+  &__star {
+    font-size: 24px;
+    color: #ccc;
+
+    &.filled {
+      color: #{$primary-color};
+    }
+  }
+}

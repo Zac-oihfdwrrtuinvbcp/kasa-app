@@ -1,0 +1,19 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 160px;
+
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  &__profile-picture {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+}

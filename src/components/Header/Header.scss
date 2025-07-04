@@ -5,7 +5,10 @@
     padding: 20px;
 
     &__logo {
-
+        width: 150px;
+        height: 40px;
+        stroke-width: 2px;
+        stroke: red;
     }
 
     &__nav {
@@ -16,6 +19,17 @@
             gap: 20px;
             margin: 0;
 
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: none;
+            color: inherit;
+
+            &.active {
+                text-decoration: underline;
+            }
         }
     }
 
