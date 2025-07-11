@@ -5,12 +5,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 30px;
 
   &__logo {
-
+    width: 150px;
+    height: auto;
+    fill: white;
+    margin: 20px 0;
   }
 
   &__text {
-
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
   }
 }

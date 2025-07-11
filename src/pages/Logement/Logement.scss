@@ -16,4 +16,12 @@
       margin: 0px;
     }
   }
+
+  &__description {
+    display: flex;
+    flex-direction: row;
+    gap : 80px;
+    width: 100%;
+    margin-top: 20px;
+  }
 }

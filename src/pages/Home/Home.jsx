@@ -8,7 +8,7 @@ import logements from '../../data/logements.json'
 function Home() {
 
   return (
-    <div className="home">
+    <main>
       <div>
         <Banner
           imageUrl={banner1}
@@ -21,7 +21,7 @@ function Home() {
         ))}
       </div>
 
-    </div>
+    </main>
   )
 }
 

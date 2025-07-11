@@ -4,6 +4,7 @@ import Gallery from "../../components/Gallery/Gallery";
 import Tags from "../../components/Tags/Tags";
 import User from "../../components/User/User";
 import Rating from "../../components/Rating/Rating";
+import Dropdown from "../../components/Dropdown/Dropdown";
 import "./Logement.scss";
 
 function Logement() {
@@ -14,7 +15,7 @@ function Logement() {
     return <Navigate to="/NotFound" />;
   }
   return (
-    <div>
+    <main>
         <div className="logement">
           <Gallery images={foundLogement.pictures} />
           <div className="logement__details">
@@ -28,8 +29,12 @@ function Logement() {
               <Rating value={foundLogement.rating} />
             </div>
           </div>
+          <div className="logement__description">
+            <Dropdown title="Description" items={[foundLogement.description]} />
+            <Dropdown title="Équipements" items={foundLogement.equipments} />
+          </div>
         </div>
-    </div>
+    </main>
   );
 }
 

@@ -1,14 +1,14 @@
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
-import Icons from "../../assets/Icons.svg"
 
 function Header() {
   return (
     <header className="header">
-      {/* <img src={LOGO} alt="Kasa Logo" className="header__logo" /> */}
-      <svg className="header__logo">
-        <use href={`${Icons}#logo`}></use>
-      </svg>
+      <NavLink to="/">
+        <svg className="header__logo">
+          <use href={`/Icons.svg#logo`}></use>
+        </svg>
+      </NavLink>
 
       <nav className="header__nav">
         <ul>
