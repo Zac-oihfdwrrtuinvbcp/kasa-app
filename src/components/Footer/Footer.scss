@@ -3,20 +3,18 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding-top: 44px;
 
   &__logo {
-    width: 150px;
+    width: 122px;
     height: auto;
     fill: white;
-    margin: 20px 0;
+    margin-bottom: 20px;
   }
 
   &__text {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
-    margin: 10px 0;
   }
 }

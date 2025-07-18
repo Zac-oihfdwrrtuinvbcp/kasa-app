@@ -1,0 +1,28 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    gap:139px;
+    text-align: center;
+    margin-top: 39px;
+    margin-bottom: 139px;
+
+    &__title {
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    &__message {
+        font-size: 36px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 18px;
+        text-decoration: underline;
+        color: black;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

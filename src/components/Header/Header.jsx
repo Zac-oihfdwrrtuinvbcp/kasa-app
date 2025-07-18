@@ -4,11 +4,9 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header className="header">
-      <NavLink to="/">
         <svg className="header__logo">
           <use href={`/Icons.svg#logo`}></use>
         </svg>
-      </NavLink>
 
       <nav className="header__nav">
         <ul>
