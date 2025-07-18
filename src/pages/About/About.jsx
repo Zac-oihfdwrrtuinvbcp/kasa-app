@@ -6,7 +6,7 @@ import "./About.scss";
 function About() {
   return (
     <main className="about">
-      <Banner imageUrl={bannerImage} title="About Us" />
+      <Banner imageUrl={bannerImage} />
       <div className="about__content">
         <Dropdown title="Fiabilité" items={["Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."]} />
         <Dropdown title="Respect" items={["La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."]} />

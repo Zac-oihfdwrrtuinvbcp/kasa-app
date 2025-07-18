@@ -8,6 +8,12 @@
     font-weight: 500;
     font-size: 18px;
     text-align: right;
+    max-width: 120px;
+    
+    @media screen and (max-width: 768px){
+      font-size: 12px;
+      max-width: 60px;
+    }
   }
 
   &__profile-picture {
@@ -15,5 +21,11 @@
     width: 64px;
     height: 64px;
     object-fit: cover;
+
+    @media screen and (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+      
+    }
   }
 }

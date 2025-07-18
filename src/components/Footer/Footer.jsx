@@ -6,7 +6,7 @@ function Footer() {
       <svg className="footer__logo" viewBox="0 0 211 68">
           <use href={`/Icons.svg#logo`}></use>
         </svg>
-      <p className="footer__text">© 2020 Kasa. All rights reserved.</p>
+      <span className="footer__text">© 2020 Kasa. All rights reserved.</span>
     </footer>
   );
 }

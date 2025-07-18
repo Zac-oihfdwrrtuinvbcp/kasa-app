@@ -2,14 +2,26 @@
 
 .rating {
   display: flex;
-  gap: 5px;
+  gap: 15px;
+
+  @media screen and (max-width: 768px) {
+    gap: 7px;
+    
+  }
 
   &__star {
-    font-size: 24px;
-    color: #ccc;
+    width: 25px;
+    height: 25px;
+    fill: #ccc;
 
     &.filled {
-      color: #{$primary-color};
+      fill: #{$primary-color};
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 13px;
+      height: 13px;
+      
     }
   }
 }

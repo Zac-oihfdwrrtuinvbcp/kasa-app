@@ -10,10 +10,10 @@ function Dropdown({ title, items }) {
 
   return (
     <div className="dropdown">
-      <button className="dropdown__toggle" onClick={toggleDropdown}>
+      <button className={`dropdown__toggle ${isOpen ? 'open' : ''}`} onClick={toggleDropdown}>
         <h3 className="dropdown__title">{title}</h3>
-        <svg className={`dropdown__arrow ${isOpen ? 'open' : ''}`} viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use href={`/Icons.svg#down-arrow`}/>
+        <svg className={`dropdown__arrow ${isOpen ? 'open' : ''}`}>
+            <use href={`/Icons.svg#up-arrow`}/>
         </svg>
       </button>
         <ul className={`dropdown__content ${isOpen ? "open" : ""}`}>

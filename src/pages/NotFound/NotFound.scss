@@ -1,28 +1,51 @@
 .not-found {
-    display: flex;
-    flex-direction: column;
-    gap:139px;
-    text-align: center;
-    margin-top: 39px;
-    margin-bottom: 139px;
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 139px;
 
-    &__title {
-        font-size: 288px;
-        font-weight: 700;
+  @media screen and (max-width: 768px) {
+    margin-top: 13px;
+    margin-bottom: 113px;
+    gap: 113px;
+  }
+  &__title {
+    font-size: 288px;
+    font-weight: bold;
+
+    @media screen and (max-width: 768px) {
+      font-size: 96px;
+    }
+  }
+
+  &__message {
+    font-size: 36px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__message-part {
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
     }
 
-    &__message {
-        font-size: 36px;
+    &:hover {
+      text-decoration: none;
     }
-
-    &__link {
-        display: inline-block;
-        font-size: 18px;
-        text-decoration: underline;
-        color: black;
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
+  }
 }

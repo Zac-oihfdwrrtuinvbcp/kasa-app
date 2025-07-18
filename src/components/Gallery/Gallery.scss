@@ -9,6 +9,11 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    @media screen and (max-width: 768px) {
+        height: 255px;
+        border-radius: 10px; 
+    }
+
 
     &__image {
         width: 100%;
@@ -29,10 +34,26 @@
             border: none;
             cursor: pointer;
          }
+         &_arrow {
+            fill:white;
+            height: 80px;
+            width: 40px;
+
+            @media screen and (max-width: 768px) {
+                height: 20px;
+                width: 11px;
+                
+            }
+         }
+
+         &_next {
+            transform: rotate(180deg);
+         }
     }
 
     &__counter {
         margin-bottom: 20px;
+        font-size: 18px;
         z-index: 2;
         color: white;
     }
